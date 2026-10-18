@@ -1,0 +1,25 @@
+name: ZelevarPotions
+version: 1.0.0
+main: dev.zelevar.ZelevarPotions
+api-version: '26.3'
+description: Новые рецепты зелий, доступные только команде зельеваров
+commands:
+  zelevar:
+    description: Управление командой зельеваров
+    usage: /zelevar <add|remove|list> [игрок]
+    permission: zelevar.admin
+  frogteam:
+    description: Управление командой лягушатников
+    usage: /frogteam <add|remove|list> [игрок]
+    permission: frogteam.admin
+permissions:
+  frogteam.admin:
+    default: op
+  frogcarry.bypass:
+    description: Носить лягушек без вступления в команду
+    default: op
+  zelevar.admin:
+    default: op
+  zelevar.bypass:
+    description: Варить новые зелья без вступления в команду
+    default: op

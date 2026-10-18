@@ -1,0 +1,39 @@
+# Внутреннее имя scoreboard-команды. Команда создаётся автоматически при запуске.
+# ВАЖНО: в /team join можно вводить только латиницу, цифры и _-.+ ,
+# поэтому внутреннее имя "zelevar", а видимое название ниже - "зельевар".
+team:
+  name: "zelevar"
+  display-name: "зельевар"
+
+messages:
+  no-access: "&cТолько члены команды &dзельевар &cмогут варить это зелье."
+
+# Каждое зелье можно отключить или поменять длительность (в секундах).
+potions:
+  haste:        { enabled: true, duration-seconds: 180 }
+  levitation:   { enabled: true, duration-seconds: 20 }
+  absorption:   { enabled: true, duration-seconds: 120 }
+  health_boost: { enabled: true, duration-seconds: 180 }
+  saturation:   { enabled: true, duration-seconds: 30 }
+  resistance:   { enabled: true, duration-seconds: 90 }
+  dolphin:      { enabled: true, duration-seconds: 180 }
+  conduit:      { enabled: true, duration-seconds: 180 }
+  hero:         { enabled: true, duration-seconds: 180 }
+  glowing:      { enabled: true, duration-seconds: 180 }
+  blindness:    { enabled: true, duration-seconds: 20 }
+  wither:       { enabled: true, duration-seconds: 15 }
+  hunger:       { enabled: true, duration-seconds: 30 }
+  nausea:       { enabled: true, duration-seconds: 15 }
+  fatigue:      { enabled: true, duration-seconds: 30 }
+  darkness:     { enabled: true, duration-seconds: 30 }
+
+# Переноска лягушек: Shift + ПКМ по лягушке - взять на голову, Shift + ПКМ - поставить.
+frog:
+  team:
+    name: "frogman"            # создаётся автоматически; в /team join - только латиница
+    display-name: "лягушатник"
+  messages:
+    picked: "&aВы взяли лягушку на голову"
+    placed: "&aВы поставили лягушку на землю"
+    already: "&cВы уже несёте лягушку"
+    hint: "&eВзять лягушку: Шифт + ПКМ"   # над хотбаром при наведении на лягушку
